@@ -269,12 +269,12 @@ ALTER TABLE ONLY public.star ALTER COLUMN star_id SET DEFAULT nextval('public.st
 -- Data for Name: galaxy; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.galaxy VALUES (1, 'Milky Way', 13600, 0, NULL, 'Our home galaxy');
-INSERT INTO public.galaxy VALUES (2, 'Andromeda', 10000, 2500000, NULL, 'Nearest spiral galaxy');
-INSERT INTO public.galaxy VALUES (3, 'Triangulum', 12000, 3000000, NULL, 'Member of the local Group');
-INSERT INTO public.galaxy VALUES (4, 'Sombrero', 13000, 29000000, NULL, 'Bright unbarred spiral galaxy');
-INSERT INTO public.galaxy VALUES (5, 'Whirlpool', 400, 2300000, NULL, 'Interacting grand-design spiral galaxy');
-INSERT INTO public.galaxy VALUES (6, 'Messier 87', 13200, 53000000, NULL, 'Supergiant elliptical galaxy');
+INSERT INTO public.galaxy VALUES (1, 'Milky Way', 13600, 0, 1, 'Our home galaxy');
+INSERT INTO public.galaxy VALUES (2, 'Andromeda', 10000, 2500000, 2, 'Nearest spiral galaxy');
+INSERT INTO public.galaxy VALUES (3, 'Triangulum', 12000, 3000000, 3, 'Member of the local Group');
+INSERT INTO public.galaxy VALUES (4, 'Sombrero', 13000, 29000000, 4, 'Bright unbarred spiral galaxy');
+INSERT INTO public.galaxy VALUES (5, 'Whirlpool', 400, 2300000, 5, 'Interacting grand-design spiral galaxy');
+INSERT INTO public.galaxy VALUES (6, 'Messier 87', 13200, 53000000, 6, 'Supergiant elliptical galaxy');
 
 
 --
@@ -307,18 +307,18 @@ INSERT INTO public.moon VALUES (40, 'Triton', 28, 1353, 'Largest moon of Neptune
 -- Data for Name: planet; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.planet VALUES (25, 'Mercury', false, NULL, 4, 0, 'Closest planet to the Sun');
-INSERT INTO public.planet VALUES (26, 'Venus', false, NULL, 4, 0, 'Hottest planet');
-INSERT INTO public.planet VALUES (27, 'Earth', true, NULL, 4, 0, 'Our home planet');
-INSERT INTO public.planet VALUES (28, 'Mars', false, NULL, 4, 0, 'The red planet');
-INSERT INTO public.planet VALUES (29, 'Jupiter', false, NULL, 4, 1, 'Largest planet');
-INSERT INTO public.planet VALUES (30, 'Saturn', false, NULL, 4, 1, 'Planet with rings');
-INSERT INTO public.planet VALUES (31, 'Uranus', false, NULL, 4, 3, 'Ice giant');
-INSERT INTO public.planet VALUES (32, 'Neptune', false, NULL, 4, 4, 'Windy planet');
-INSERT INTO public.planet VALUES (33, 'Planet b Sirius', false, NULL, 5, 8, 'Exoplanet in Sirius system');
-INSERT INTO public.planet VALUES (34, 'Planet c Sirius', false, NULL, 5, 8, 'Another exoplanet');
-INSERT INTO public.planet VALUES (35, 'Planet a Betelgeuse', false, NULL, 3, 642, 'Distant exoplanet');
-INSERT INTO public.planet VALUES (36, 'Planet b Betelgeuse', false, NULL, 3, 642, 'Distant exoplanet');
+INSERT INTO public.planet VALUES (25, 'Mercury', false, true, 4, 0, 'Closest planet to the Sun');
+INSERT INTO public.planet VALUES (26, 'Venus', false, true, 4, 0, 'Hottest planet');
+INSERT INTO public.planet VALUES (27, 'Earth', true, true, 4, 0, 'Our home planet');
+INSERT INTO public.planet VALUES (28, 'Mars', false, true, 4, 0, 'The red planet');
+INSERT INTO public.planet VALUES (29, 'Jupiter', false, true, 4, 1, 'Largest planet');
+INSERT INTO public.planet VALUES (30, 'Saturn', false, true, 4, 1, 'Planet with rings');
+INSERT INTO public.planet VALUES (31, 'Uranus', false, true, 4, 3, 'Ice giant');
+INSERT INTO public.planet VALUES (32, 'Neptune', false, true, 4, 4, 'Windy planet');
+INSERT INTO public.planet VALUES (33, 'Planet b Sirius', false, true, 5, 8, 'Exoplanet in Sirius system');
+INSERT INTO public.planet VALUES (34, 'Planet c Sirius', false, true, 5, 8, 'Another exoplanet');
+INSERT INTO public.planet VALUES (35, 'Planet a Betelgeuse', false, true, 3, 642, 'Distant exoplanet');
+INSERT INTO public.planet VALUES (36, 'Planet b Betelgeuse', false, true, 3, 642, 'Distant exoplanet');
 
 
 --
