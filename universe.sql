@@ -52,7 +52,7 @@ CREATE TABLE public.galaxy (
     name character varying(30) NOT NULL,
     age_in_millions_of_years integer,
     distance_from_earth integer,
-    galaxy_order numeric,
+    galaxy_order integer,
     description text NOT NULL
 );
 
